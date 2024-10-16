@@ -1,54 +1,54 @@
 @extends('layoutes.main')
 @section('content')
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+<!-- <img src="//assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
 
-      <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
+<div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="container position-relative">
 
-        <div class="container position-relative">
-
-          <div class="carousel-item active">
-            <div class="carousel-container">
-              <h2>Kecamatan Cililin, Kabupaten Bandung Barat</h2>
-              <p>Temukan informasi publik terkini dari Kecamatan Cililin</p>
-              <a href="#about" class="btn-get-started">Read More</a>
-            </div>
-          </div><!-- End Carousel Item -->
-
-          <div class="carousel-item">
-            <div class="carousel-container">
-              <h2>Visi</h2>
-              <p>Visi</p>
-            </div>
-          </div><!-- End Carousel Item -->
-
-          <div class="carousel-item">
-            <div class="carousel-container">
-              <h2>Misi</h2>
-              <p>Misi.</p>
-            </div>
-          </div><!-- End Carousel Item -->
-
-          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-
-          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
-
-          <ol class="carousel-indicators"></ol>
-
-        </div>
-
+    <div class="carousel-item active">
+      <div class="carousel-container">
+        <h2>Kecamatan Cililin, Kabupaten Bandung Barat</h2>
+        <p>Temukan informasi publik terkini dari Kecamatan Cililin</p>
+        <a href="#about" class="btn-get-started">Read More</a>
       </div>
+    </div><!-- End Carousel Item -->
 
-    </section><!-- /Hero Section -->
+    <div class="carousel-item">
+      <div class="carousel-container">
+        <h2>Visi</h2>
+        <p>Visi</p>
+      </div>
+    </div><!-- End Carousel Item -->
 
-<!-- Featured Services Section -->
+    <div class="carousel-item">
+      <div class="carousel-container">
+        <h2>Misi</h2>
+        <p>Misi.</p>
+      </div>
+    </div><!-- End Carousel Item -->
+
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+    <ol class="carousel-indicators"></ol>
+
+  </div>
+
+</div>
+
+</section><!-- /Hero Section -->
+
+
+    <!-- Featured Services Section -->
 <section id="featured-services" class="featured-services section">
   <div class="container">
     <div class="row justify-content-center gy-4">
@@ -97,7 +97,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/CililinKBB1.jpg" class="img-fluid" alt="">
+            <img src="/assets/img/CililinKBB1.png" class="img-fluid" alt="">
             <a href="https://youtu.be/pufHojsYIik?si=jpTkwj3rYLTIWVCI" class="glightbox pulsating-play-btn"></a>
           </div>
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">

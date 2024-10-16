@@ -10,4 +10,10 @@ class KecamatanController extends Controller
     {
         return view('index.index');
     }
+
+    public function ahliwarisIndex()
+    {
+        return view('index.pelayanan.ahliwaris');
+    }
+
 }
