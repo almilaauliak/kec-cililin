@@ -97,6 +97,7 @@
             <ul>
                 <li><a href="{{ url('/pelayanan/ahliwaris') }}">Ahli Waris</a></li>
                 <li><a href="{{ url('/pelayanan/sku') }}">SKU (Surat Keterangan Usaha)</a></li>
+
                 <li><a href="{{ url('/pelayanan/ium') }}">IUM (Ijin Usaha Mikro)</a></li>
                 <li><a href="">SPPT PBB</a></li>
                 <li><a href="">IMB</a></li>
@@ -117,7 +118,7 @@
                 </li>
             </ul>      
 
-          <li><a href="contact.html">Berita</a></li>
+          <li><a href="{{ url('/berita/berita') }}">Berita</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
