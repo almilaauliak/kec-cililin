@@ -13,7 +13,6 @@
       <div class="carousel-container">
         <h2>Kecamatan Cililin, Kabupaten Bandung Barat</h2>
         <p>Temukan informasi publik terkini dari Kecamatan Cililin</p>
-        <a href="#about" class="btn-get-started">Read More</a>
       </div>
     </div><!-- End Carousel Item -->
 
