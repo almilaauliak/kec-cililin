@@ -3,7 +3,7 @@
 <!-- Hero Section -->
 <section id="hero" class="hero section dark-background">
 
-<!-- <img src="//assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
+<img src="//assets/img/cililin-bg.png" alt="" data-aos="fade-in">
 
 <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -19,14 +19,18 @@
     <div class="carousel-item">
       <div class="carousel-container">
         <h2>Visi</h2>
-        <p>Visi</p>
+        <p> " Menjadikan kecamatan dan desa sebagai pusat pelayanan dan memberdayakan masyarakat dengan memanfaatkan potensi wilayah".</p>
       </div>
     </div><!-- End Carousel Item -->
 
     <div class="carousel-item">
       <div class="carousel-container">
         <h2>Misi</h2>
-        <p>Misi.</p>
+        <p1>1.	Meningkatkan Sumber daya aparatur kecamatan.</p1>
+        <p2>2.	Melaksanakan pelimpahan sebagian kewenangan Bupati kepada Camat.</p2>
+        <p3>3.	Memberikan pelayanan prima kepada masyarakat.</p3>
+        <p4>4.	Meningkatkan pemberdayaan masyarakat.</p4>
+        <p5>5.	Meningkatkan pemberdayaan aparatur pemerintahan desa.</p5>
       </div>
     </div><!-- End Carousel Item -->
 

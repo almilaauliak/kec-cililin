@@ -17,28 +17,27 @@
 
 <div class="container mt-5">
     <!-- Judul -->
-    <h2 class="text-center mb-4">SKU (Surat Keterangan Usaha)</h2>
+    <h2 class="text-center mb-4"> SKU (Surat Keterangan Usaha) </h2>
     
     <!-- Syarat Pembuatan Ahli Waris -->
-    <h3 class="mt-4">PERSYARATAN PERMOHONAN SURAT KETERANGAN USAHA</h3>
+    <h3 class="mt-4">Persyaratan</h3>
     <ol class="list-group list-group-numbered mb-4">
-      <li class="list-group-item">Surat Pengantar RT/RW</li>
-      <li class="list-group-item">Kartu Tanda Penduduk (KTP) yang masih berlaku (Asli & Fotokopi)</li>
-      <li class="list-group-item">Kartu Keluarga (KK) (Fotokopi)</li>
-      <li class="list-group-item">Surat Pernyataan/Permohonan</li>
+      <li class="list-group-item">Pengantar Rt, Rw dan kelurahan</li>
+      <li class="list-group-item">Surat Keterangan Usaha</li>
+      <li class="list-group-item">fc ktp</li>
+      <li class="list-group-item">fc kk</li>
+      <li class="list-group-item"> foto Usaha berwarna</li>
     </ol>
 
     <!-- Sistem, Mekanisme, dan Prosedur -->
     <h3 class="mt-4">Sistem, Mekanisme, dan Prosedur</h3>
     <ol class="list-group list-group-numbered mb-4">
-      <li class="list-group-item">Membuat Surat Pengantar RT/RW. Anda hanya perlu mendatangi Pengurus RT, Surat Pengantar yang sudah jadi akan ditandatangani Ketua RT, untuk kemudian disahkan oleh RW.</li>
-      <li class="list-group-item">Satukan dengan berkas lainnya untuk dibawa ke Kantor Kelurahan/Kepala Desa</li>
-      <li class="list-group-item">Anda akan diminta mengisi formulir pembuatan Surat Keterangan Usaha</li>
-      <li class="list-group-item">Setelah berkas persyaratan dan formulir Anda serahkan kepada petugas, Anda tinggal menunggu SKU dibuat (Waktu menunggu tergantung masing-masing Kelurahan/Desa)</li>
-      <li class="list-group-item">Setelah Surat Keterangan Usaha (SKU) anda jadi dan ditandatangani oleh Lurah/Kepala Desa</li>
-      <li class="list-group-item">SKU tersebut anda bawa ke Kantor Kecamatan</li>
-      <li class="list-group-item">SKU anda akan ditandatangani oleh Camat dan disahkan dengan stempel Kecamatan.</li>
-      <li class="list-group-item">Surat Keterangan Usaha (SKU) memiliki masa berlaku satu tahun sejak tanggal diterbitkan.</li>
+      <li class="list-group-item">langkah pertama pembuatan SKU adalah membuat pengantar ke RT dan RW setempat dengan membawa persyaratan ( KTP, KK, foto tempat usaha)</li>
+    </ol>
+
+    <h3 class="mt-4">waktu penyelesaian</h3>
+    <ol class="list-group list-group-numbered mb-4">
+      <p>Apabila terjadi kekurangan persyaratan maka akan makan waktu yang lebih lama</p>
     </ol>
   </div><!--komponen baru end-->
 
