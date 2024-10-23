@@ -70,13 +70,13 @@
           </li>     
             </ul>
             <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-                <li><a href="">Sejarah Kecamatan</a></li>
-                <li><a href="">Struktur Organisasi</a></li>
-                <li><a href="">Maklumat Pelayanan</a></li>
-                <li><a href="">Jam Pelayanan</a></li>
-                </li>
-            </ul>    
+              <ul>
+                  <li><a href="{{ url(path: '/informasi/sejarah') }}">Sejarah Kecamatan</a></li>
+                  <li><a href="{{ url(path: '/informasi/struktur') }}">Struktur Organisasi</a></li>
+                  <li><a href="{{ url(path: '/informasi/maklumat') }}">Maklumat Pelayanan</a></li>
+                  <li><a href="{{ url(path: '/informasi/jam_pelayanan') }}">Jam Pelayanan</a></li>
+                  </li>
+              </ul>    
             <li class="dropdown"><a href="#"><span>Desa</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                 <li><a href="">Cililin</a></li>
@@ -96,8 +96,8 @@
             <li class="dropdown"><a href="#"><span>Pelayanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
                 <li><a href="{{ url('/pelayanan/ahliwaris') }}">Ahli Waris</a></li>
-                <li><a href="">SKU (Surat Keterangan Usaha)</a></li>
-                <li><a href="">IUM (Ijin Usaha Mikro)</a></li>
+                <li><a href="{{ url('/pelayanan/sku') }}">SKU (Surat Keterangan Usaha)</a></li>
+                <li><a href="{{ url('/pelayanan/ium') }}">IUM (Ijin Usaha Mikro)</a></li>
                 <li><a href="">SPPT PBB</a></li>
                 <li><a href="">IMB</a></li>
                 <li><a href="">E-KTP</a></li>

@@ -13,3 +13,10 @@ Route::get(uri: '/pemerintahan/trantibum', action: [KecamatanController::class, 
 Route::get(uri: '/pemerintahan/perencanaanKeu', action: [KecamatanController::class, 'perencanaanKeu']);
 Route::get(uri: '/pemerintahan/kepegawaianUm', action: [KecamatanController::class, 'kepegawaianUm']);
 Route::get(uri: '/kegiatan/dokumentasi', action: [KecamatanController::class, 'dokumentasi']);
+Route::get('/pelayanan/sku', [KecamatanController::class, 'sku']);
+Route::get('/pelayanan/ium', [KecamatanController::class, 'ium']);
+Route::get('/informasi/sejarah', [KecamatanController::class, 'sejarah']);
+Route::get('/informasi/struktur', [KecamatanController::class, 'struktur']);
+Route::get('/informasi/maklumat', [KecamatanController::class, 'maklumat']);
+Route::get('/informasi/jam_pelayanan', [KecamatanController::class, 'jam_pelayanan']);
+

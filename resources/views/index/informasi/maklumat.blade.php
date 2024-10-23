@@ -17,7 +17,7 @@
 
 <div class="container mt-5">
     <!-- Judul -->
-    <h2 class="text-center mb-4"> Sejarah Kecamatan Cililin </h2>
+    <h2 class="text-center mb-4">Ahli Waris</h2>
     
     <!-- Syarat Pembuatan Ahli Waris -->
     <h3 class="mt-4">Syarat Pembuatan Ahli Waris</h3>
