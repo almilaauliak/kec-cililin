@@ -55,16 +55,16 @@
             <ul>
                 <li class="dropdown"><a href="#"><span>Camat</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">PMD</a></li>
-                  <li><a href="#">BINWAS</a></li>
-                  <li><a href="#">PENYALIK</a></li>
-                  <li><a href="#">TRANTIBUM</a></li>
+                  <li><a href="{{ url('/pemerintahan/pmd') }}">PMD</a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/binwas') }}">BINWAS</a></a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/penyalik') }}">PENYALIK</a></li>
+                  <li><a href="{{ url(path: 'pemerintahan/trantibum') }}">TRANTIBUM</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Sekcam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Sub Bidang Perencanaan dan Keuangan</a></li>
-                  <li><a href="#">Sub Bidang Kepegawaian dan Umum</a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/perencanaanKeu') }}">Sub Bidang Perencanaan dan Keuangan</a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/kepegawaianUm') }}">Sub Bidang Kepegawaian dan Umum</a></li>
                 </ul>
               </li>      
           </li>     
@@ -113,7 +113,7 @@
 
             <li class="dropdown"><a href="#"><span>Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="">Dokumentasi Kegiatan</a></li>
+                <li><a href="{{ url(path: '/kegiatan/dokumentasi') }}">Dokumentasi Kegiatan</a></li>
                 </li>
             </ul>      
 
