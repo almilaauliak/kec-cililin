@@ -12,7 +12,6 @@
 </div>
 <!---crousel akhir--->
 
-   
 <!--komponen baru-->
 
 <div class="container mt-5">

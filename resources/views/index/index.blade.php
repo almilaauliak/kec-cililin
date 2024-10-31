@@ -3,7 +3,7 @@
 <!-- Hero Section -->
 <section id="hero" class="hero section dark-background">
 
-<img src="//assets/img/cililin-bg.png" alt="" data-aos="fade-in">
+<!--<img src="//assets/img/cililin-bg.png" alt="" data-aos="fade-in">-->
 
 <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 

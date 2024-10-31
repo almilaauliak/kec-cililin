@@ -17,72 +17,21 @@
 <h2 class="text-center mb-4">Berita</h2>
     <div class="container col-xxl-10 py-5">   
         <div class="row">
+
+
         <!-- Col Berita Per card-->
-            <div class="col-lg-4 mb-4">
-                <a href="../berita/detail" class="text-decoration-none text-dark">
-                <div class="card bg-white border-0">
-                    <img src="{{ asset('images/blog-1.jpg') }}" class="img-fluid rounded-4 mb-3" alt="">
-                    <h3 class="fw-bold mb-3">Berita Prabowo Subianto Terkini Dan Terbaru Hari Ini</h3>
-                    <p>Indonesia / 22 Oktober 2024</p>
-                </div> 
-                </a>
-            </div>   
-        <!-- end col --> 
-        <!-- Col Berita Per card-->
-        <div class="col-lg-4 mb-4">
-            <a href="../berita/detail" class="text-decoration-none text-dark">
-                <div class="card bg-white border-0">
-                    <img src="{{ asset('images/blog-2.jpg') }}" class="img-fluid rounded-4 mb-3" alt="">
-                    <h3 class="fw-bold mb-3">Berita Prabowo Subianto Terkini Dan Terbaru Hari Ini</h3>
-                    <p>Indonesia / 22 Oktober 2024</p>
-                </div> 
-                </a>
-            </div>   
-        <!-- end col --> 
-        <!-- Col Berita Per card-->
-        <div class="col-lg-4 mb-4">
-            <a href="../berita/detail" class="text-decoration-none text-dark">
-                <div class="card bg-white border-0">
-                    <img src="{{ asset('images/blog-3.jpg') }}" class="img-fluid rounded-4 mb-3" alt="">
-                    <h3 class="fw-bold mb-3">Berita Prabowo Subianto Terkini Dan Terbaru Hari Ini</h3>
-                    <p>Indonesia / 22 Oktober 2024</p>
-                </div> 
-                </a>
-            </div>   
-        <!-- end col -->
-        <!-- Col Berita Per card-->
-        <div class="col-lg-4 mb-4">
-            <a href="../berita/detail" class="text-decoration-none text-dark">
-                <div class="card bg-white border-0">
-                    <img src="{{ asset('images/blog-4.jpg') }}" class="img-fluid rounded-4 mb-3" alt="">
-                    <h3 class="fw-bold mb-3">Berita Prabowo Subianto Terkini Dan Terbaru Hari Ini</h3>
-                    <p>Indonesia / 22 Oktober 2024</p>
-                </div> 
-                </a>
-            </div>   
-        <!-- end col --> 
-        <!-- Col Berita Per card-->
-        <div class="col-lg-4 mb-4">
-            <a href="../berita/detail" class="text-decoration-none text-dark">
-                <div class="card bg-white border-0">
-                    <img src="{{ asset('images/blog-5.jpg') }}" class="img-fluid rounded-4 mb-3" alt="">
-                    <h3 class="fw-bold mb-3">Berita Prabowo Subianto Terkini Dan Terbaru Hari Ini</h3>
-                    <p>Indonesia / 22 Oktober 2024</p>
-                </div> 
-                </a>
-            </div>   
-        <!-- end col --> 
-        <!-- Col Berita Per card-->
-        <div class="col-lg-4 mb-4">
-            <a href="../berita/detail" class="text-decoration-none text-dark">
-                <div class="card bg-white border-0">
-                    <img src="{{ asset('images/blog-6.jpg') }}" class="img-fluid rounded-4 mb-3" alt="">
-                    <h3 class="fw-bold mb-3">Berita Prabowo Subianto Terkini Dan Terbaru Hari Ini</h3>
-                    <p>Indonesia / 22 Oktober 2024</p>
-                </div> 
-                </a>
-            </div>   
-        <!-- end col -->     
+        @foreach ($artikels as $item)
+                    <div class="col-lg-4 mb-4">
+                        <a href="/berita/detail/{{ $item->id }}" class="text-decoration-none text-dark">
+                            <div class="card bg-white border-0">
+                                <img src="{{ asset('storage/artikel/' . $item->image) }}" class="img-fluid rounded-4 mb-3"
+                                    alt="">
+                                <h3 class="fw-bold mb-3">{{ $item->judul }}</h3>
+                                <p>Berita / 31 Oct 2022</p>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach  
         
         </div>
     </div>

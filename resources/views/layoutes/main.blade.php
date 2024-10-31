@@ -10,8 +10,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/assets/img/KBB.png" rel="icon">
+  <link href="/assets/img/KBB.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -35,6 +35,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  {{-- Summernote CSS --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css" />
 </head>
 
 <body class="index-page">
@@ -42,9 +45,9 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="/assets/img/logo.png" alt=""> -->
+        <img src="/assets/img/KBB.png" alt="">
         <h1 class="sitename">Kecamatan Cililin</h1>
       </a>
 
@@ -55,16 +58,16 @@
             <ul>
                 <li class="dropdown"><a href="#"><span>Camat</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">PMD</a></li>
-                  <li><a href="#">BINWAS</a></li>
-                  <li><a href="#">PENYALIK</a></li>
-                  <li><a href="#">TRANTIBUM</a></li>
+                  <li><a href="{{ url('/pemerintahan/pmd') }}">PMD</a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/binwas') }}">BINWAS</a></a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/penyalik') }}">PENYALIK</a></li>
+                  <li><a href="{{ url(path: 'pemerintahan/trantibum') }}">TRANTIBUM</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Sekcam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Sub Bidang Perencanaan dan Keuangan</a></li>
-                  <li><a href="#">Sub Bidang Kepegawaian dan Umum</a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/perencanaanKeu') }}">Sub Bidang Perencanaan dan Keuangan</a></li>
+                  <li><a href="{{ url(path: '/pemerintahan/kepegawaianUm') }}">Sub Bidang Kepegawaian dan Umum</a></li>
                 </ul>
               </li>      
           </li>     
@@ -114,7 +117,7 @@
 
             <li class="dropdown"><a href="#"><span>Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="">Dokumentasi Kegiatan</a></li>
+                <li><a href="{{ url(path: '/kegiatan/dokumentasi') }}">Dokumentasi Kegiatan</a></li>
                 </li>
             </ul>      
 
@@ -123,7 +126,21 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <!--JS SUmmernote-->
+    {{-- JQUERY --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 
+    {{-- Summernote JS --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 300,
+            });
+        });
+    </script>
+      <!--End JS summernote-->
     </div>
 
     
