@@ -45,7 +45,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="/assets/img/KBB.png" alt="">
         <h1 class="sitename">Kecamatan Cililin</h1>
@@ -58,70 +58,70 @@
             <ul>
                 <li class="dropdown"><a href="#"><span>Camat</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="{{ url('/pemerintahan/pmd') }}">PMD</a></li>
-                  <li><a href="{{ url(path: '/pemerintahan/binwas') }}">BINWAS</a></a></li>
-                  <li><a href="{{ url(path: '/pemerintahan/penyalik') }}">PENYALIK</a></li>
-                  <li><a href="{{ url(path: 'pemerintahan/trantibum') }}">TRANTIBUM</a></li>
+                  <li><a href="{{ url('/halaman/PMD') }}">PMD</a></li>
+                  <li><a href="{{ url('/halaman/BINWAS') }}">BINWAS</a></a></li>
+                  <li><a href="{{ url('/halaman/PENYALIK') }}">PENYALIK</a></li>
+                  <li><a href="{{ url('/halaman/TRANTIBUM') }}">TRANTIBUM</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Sekcam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="{{ url(path: '/pemerintahan/perencanaanKeu') }}">Sub Bidang Perencanaan dan Keuangan</a></li>
-                  <li><a href="{{ url(path: '/pemerintahan/kepegawaianUm') }}">Sub Bidang Kepegawaian dan Umum</a></li>
+                  <li><a href="{{ url('/halaman/Sub Bidang Perencanaan dan Keuangan') }}">Sub Bidang Perencanaan dan Keuangan</a></li>
+                  <li><a href="{{ url('/halaman/Sub Bidang Kepegawaian dan Umum') }}">Sub Bidang Kepegawaian dan Umum</a></li>
                 </ul>
               </li>      
           </li>     
             </ul>
             <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                  <li><a href="{{ url(path: '/informasi/sejarah') }}">Sejarah Kecamatan</a></li>
-                  <li><a href="{{ url(path: '/informasi/struktur') }}">Struktur Organisasi</a></li>
-                  <li><a href="{{ url(path: '/informasi/maklumat') }}">Maklumat Pelayanan</a></li>
-                  <li><a href="{{ url(path: '/informasi/jam_pelayanan') }}">Jam Pelayanan</a></li>
+                  <li><a href="{{ url('/halaman/Sejarah Kecamatan') }}">Sejarah Kecamatan</a></li>
+                  <li><a href="{{ url('/halaman/Struktur Organisasi') }}">Struktur Organisasi</a></li>
+                  <li><a href="{{ url('/halaman/Maklumat Pelayanan') }}">Maklumat Pelayanan</a></li>
+                  <li><a href="{{ url('/halaman/Jam Pelayanan') }}">Jam Pelayanan</a></li>
                   </li>
               </ul>    
             <li class="dropdown"><a href="#"><span>Desa</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="">Cililin</a></li>
-                <li><a href="">Budiharja</a></li>
-                <li><a href="">Batulayang</a></li>
-                <li><a href="">Bongas</a></li>
-                <li><a href="">Karanganyar</a></li>
-                <li><a href="">Karangtanjung</a></li>
-                <li><a href="">karyamukti</a></li>
-                <li><a href="">Kidangpananjung</a></li>
-                <li><a href="">Mukapayung</a></li>
-                <li><a href="">Nanggerang</a></li>
-                <li><a href="">Rancapanggung</a></li>
+                <li><a href="{{ url('/halaman/Cililin') }}'">Cililin</a></li>
+                <li><a href="{{ url('/halaman/Budiharja') }}">Budiharja</a></li>
+                <li><a href="{{ url('/halaman/Batulayang') }}">Batulayang</a></li>
+                <li><a href="{{ url('/halaman/Bongas') }}">Bongas</a></li>
+                <li><a href="{{ url('/halaman/Karanganyar') }}">Karanganyar</a></li>
+                <li><a href="{{ url('/halaman/Karangtanjung') }}">Karangtanjung</a></li>
+                <li><a href="{{ url('/halaman/Karyamukti') }}">Karyamukti</a></li>
+                <li><a href="{{ url('/halaman/kidangpananjung') }}">kidangpananjung</a></li>
+                <li><a href="{{ url('/halaman/Mukapayung') }}">Mukapayung</a></li>
+                <li><a href="{{ url('/halaman/Nanggerang') }}">Nanggerang</a></li>
+                <li><a href="{{ url('/halaman/Rancapanggung') }}">Rancapanggung</a></li>
                 </li>
             </ul>  
 
-            <li class="dropdown"><a href="#"><span>Pelayanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+           
+      <li class="dropdown"><a href="#"><span>Pelayanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="{{ url('/pelayanan/ahliwaris') }}">Ahli Waris</a></li>
-                <li><a href="{{ url('/pelayanan/sku') }}">SKU (Surat Keterangan Usaha)</a></li>
-
-                <li><a href="{{ url('/pelayanan/ium') }}">IUM (Ijin Usaha Mikro)</a></li>
-                <li><a href="">SPPT PBB</a></li>
-                <li><a href="">IMB</a></li>
-                <li><a href="">E-KTP</a></li>
-                <li><a href="">Kartu Keluarga</a></li>
-                <li><a href="">Surat Pindah</a></li>
-                <li><a href="">Fatwa Waris</a></li>
-                <li><a href="">SKKB (Surat Keterangan Kelakuan Baik)</a></li>
-                <li><a href="">SKTM (Surat Keterangan Tidak Mampu) </a></li>
-                <li><a href="">Rekomendasi Proposal</a></li>
-                <li><a href="">PPARs</a></li>
+                <li><a href="{{ url('/halaman/Ahli Waris') }}">Ahli Waris</a></li>
+                <li><a href="{{ url('/halaman/SKU (Surat Keterangan Usaha)') }}">SKU (Surat Keterangan Usaha)</a></li>
+                <li><a href="{{ url('/halaman/IUM (Ijin Usaha Mikro)') }}">IUM (Ijin Usaha Mikro)</a></li>
+                <li><a href="{{ url('/halaman/SPPT PBB') }}">SPPT PBB</a></li>
+                <li><a href="{{ url('/halaman/IMB') }}">IMB</a></li>
+                <li><a href="{{ url('/halaman/E-KTP') }}">E-KTP</a></li>
+                <li><a href="{{ url('/halaman/Kartu Keluarga') }}">Kartu Keluarga</a></li>
+                <li><a href="{{ url('/halaman/Surat Pindah') }}">Surat Pindah</a></li>
+                <li><a href="{{ url('/halaman/Fatwa Waris') }}">Fatwa Waris</a></li>
+                <li><a href="{{ url('/halaman/SKKB (Surat Keterangan Kelakuan Baik)') }}">SKKB (Surat Keterangan Kelakuan Baik)</a></li>
+                <li><a href="{{ url('/halaman/SKTM (Surat Keterangan Tidak Mampu)') }}">SKTM (Surat Keterangan Tidak Mampu)</a></li>
+                <li><a href="{{ url('/halaman/Rekomendasi Proposal') }}">Rekomendasi Proposal</a></li>
+                <li><a href="{{ url('/halaman/PPARs') }}">PPARs</a></li>
                 </li>
             </ul>  
 
             <li class="dropdown"><a href="#"><span>Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="{{ url(path: '/kegiatan/dokumentasi') }}">Dokumentasi Kegiatan</a></li>
+                <li><a href="{{ url('/halaman/Dokumentasi Kegiatan') }}">Dokumentasi Kegiatan</a></li>
                 </li>
             </ul>      
 
-          <li><a href="{{ url('/berita/berita') }}">Berita</a></li>
+          <li><a href="{{ url('index/berita') }}">Berita</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -175,8 +175,8 @@
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
+            <!--<a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a> -->
             <a href="https://www.instagram.com/kecamatan.cililin"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
@@ -191,7 +191,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="">Kecamatan Cililin Website Develop</a>
+        Designed by Kecamatan Cililin Website Develop Almila, Rizal, Zamhar </a>
       </div>
     </div>
 

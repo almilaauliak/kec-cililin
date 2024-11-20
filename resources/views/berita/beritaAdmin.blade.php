@@ -48,16 +48,17 @@
                         @php
                             $no = 1;
                         @endphp
-                        @foreach ($artikels as $item)
+                        @foreach ($artikels as $artikel)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{ $item->judul }}</td>
+                                <td>{{ $artikel->judul }}</td>
                                 <td>
-                                   <img src="{{ asset('../storage/artikel/' . $item->image) }}" height="100" alt="">
+                                   <!-- <img src="{{ asset('public/artikel/' . $artikel->image) }}" height="100" alt="">-->
+                                   <img src="{{ asset('storage/' . $artikel->image) }}" height="100" alt="">
                                 </td>
                                 <td>
-                                    <a href="../berita/editBerita/{{ $item->id }}" class="btn btn-success">Edit</a>
-                                    <form action="../berita/deleteBerita/{{ $item->id }}" method="POST" class="d-inline">
+                                    <a href="../berita/editBerita/{{ $artikel->id }}" class="btn btn-success">Edit</a>
+                                    <form action="../berita/deleteBerita/{{ $artikel->id }}" method="POST" class="d-inline">
                                         @csrf
                                         <button class="btn btn-danger btn-sm"
                                             onclick="return confirm('Apakah anda yakin akan menghapus ?')">

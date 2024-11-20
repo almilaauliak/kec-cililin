@@ -1,124 +1,148 @@
 @extends('layoutes.main')
 @section('content')
+
 <!-- Hero Section -->
 <section id="hero" class="hero section dark-background">
+    <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="container position-relative">
 
-<!--<img src="//assets/img/cililin-bg.png" alt="" data-aos="fade-in">-->
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-container">
+                    @if($homepages->where('content', 'Slide_1')->first())
+                        <h2>{{ $homepages->where('content', 'Slide_1')->first()->judul }}</h2>
+                        <p>{!! $homepages->where('content', 'Slide_1')->first()->desc !!}</p>
+                    @endif
+                </div>
+            </div><!-- End Carousel Item 1 -->
 
-<div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="carousel-container">
+                    @if($homepages->where('content', 'Slide_2')->first())
+                        <h2>{{ $homepages->where('content', 'Slide_2')->first()->judul }}</h2>
+                        <p>{!! $homepages->where('content', 'Slide_2')->first()->desc !!}</p>
+                    @endif  
+                </div>
+            </div><!-- End Carousel Item 2 -->
 
-  <div class="container position-relative">
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="carousel-container">
+                    @if($homepages->where('content', 'Slide_3')->first())
+                        <h2>{{ $homepages->where('content', 'Slide_3')->first()->judul }}</h2>
+                        <p>{!! $homepages->where('content', 'Slide_3')->first()->desc !!}</p>
+                    @endif  
+                </div>
+            </div><!-- End Carousel Item 3 -->
 
-    <div class="carousel-item active">
-      <div class="carousel-container">
-        <h2>Kecamatan Cililin, Kabupaten Bandung Barat</h2>
-        <p>Temukan informasi publik terkini dari Kecamatan Cililin</p>
-      </div>
-    </div><!-- End Carousel Item -->
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
 
-    <div class="carousel-item">
-      <div class="carousel-container">
-        <h2>Visi</h2>
-        <p> " Menjadikan kecamatan dan desa sebagai pusat pelayanan dan memberdayakan masyarakat dengan memanfaatkan potensi wilayah".</p>
-      </div>
-    </div><!-- End Carousel Item -->
+            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
 
-    <div class="carousel-item">
-      <div class="carousel-container">
-        <h2>Misi</h2>
-        <p1>1.	Meningkatkan Sumber daya aparatur kecamatan.</p1>
-        <p2>2.	Melaksanakan pelimpahan sebagian kewenangan Bupati kepada Camat.</p2>
-        <p3>3.	Memberikan pelayanan prima kepada masyarakat.</p3>
-        <p4>4.	Meningkatkan pemberdayaan masyarakat.</p4>
-        <p5>5.	Meningkatkan pemberdayaan aparatur pemerintahan desa.</p5>
-      </div>
-    </div><!-- End Carousel Item -->
+            <ol class="carousel-indicators"></ol>
 
-    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-    </a>
-
-    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-    </a>
-
-    <ol class="carousel-indicators"></ol>
-
-  </div>
-
-</div>
-
+        </div>
+    </div>
 </section><!-- /Hero Section -->
 
-
-    <!-- Featured Services Section -->
+<!-- Featured Services Section -->
 <section id="featured-services" class="featured-services section">
-  <div class="container">
-    <div class="row justify-content-center gy-4">
-      <div class="col-md-4">
-        <div class="service-item item-cyan position-relative">
-          <div class="icon">
-            <i class="bi bi-activity"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Jumlah Desa</h3>
-            <h1>11</h1>
-          </a>
-          </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item item-orange position-relative">
-          <div class="icon">
-            <i class="bi bi-broadcast"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Jumlah Penduduk</h3>
-            <h1>3902</h1>
-          </a>
-          </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item item-teal position-relative">
-          <div class="icon">
-            <i class="bi bi-easel"></i>
-          </div>
-          <a href="service-details.html" class="stretched-link">
-            <h3>Luas Wilayah Cililin</h3>
-            <h1>8913931</h1>
-          </a>
-         
+    <div class="container">
+        <div class="row justify-content-center gy-4">
+
+            <div class="col-md-4">
+                <div class="service-item item-cyan position-relative">
+                    <div class="icon">
+                        <i class="bi bi-activity"></i>
+                    </div>
+                    <a class="Jumlah Desa">
+                        @if($homepages->where('content', 'Jumlah Desa')->first())
+                            <h3>{{ $homepages->where('content', 'Jumlah Desa')->first()->judul }}</h3>
+                            <h1>{!! $homepages->where('content', 'Jumlah Desa')->first()->desc !!}</h1>
+                        @endif
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-item item-orange position-relative">
+                    <div class="icon">
+                        <i class="bi bi-broadcast"></i>
+                    </div>
+                    <a class="Jumlah Penduduk">
+                        @if($homepages->where('content', 'Jumlah Penduduk')->first())
+                            <h3>{{ $homepages->where('content', 'Jumlah Penduduk')->first()->judul }}</h3>
+                            <h1>{!! $homepages->where('content', 'Jumlah Penduduk')->first()->desc !!}</h1>
+                        @endif
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-item item-teal position-relative">
+                    <div class="icon">
+                        <i class="bi bi-easel"></i>
+                    </div>
+                    <a class="Luas Wilayah Cililin">
+                        @if($homepages->where('content', 'Luas Wilayah Cililin')->first())
+                            <h3>{{ $homepages->where('content', 'Luas Wilayah Cililin')->first()->judul }}</h3>
+                            <h1>{!! $homepages->where('content', 'Luas Wilayah Cililin')->first()->desc !!}</h1>
+                        @endif
+                    </a>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 </section><!-- /Featured Services Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section light-background">
-
-      <div class="container">
-
+<!-- Camat Section -->
+<section id="camat" class="about section light-background">
+    <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="/assets/img/CililinKBB1.png" class="img-fluid" alt="">
-            <a href="https://youtu.be/pufHojsYIik?si=jpTkwj3rYLTIWVCI" class="glightbox pulsating-play-btn"></a>
-          </div>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Kecamatan Cililin</h3>
-            <p class="fst-italic">
-            Kecamatan Cililin adalah salah satu kecamatan yang terletak di Kabupaten Bandung Barat, Jawa Barat, Indonesia.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Kecamatan ini terkenal sebagai kawasan yang memiliki potensi alam yang cukup kaya, terutama di sektor pertanian, perkebunan, dan sumber daya air.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Cililin juga dikenal sebagai salah satu daerah penghasil makanan khas, seperti tahu Cililin, yang populer di wilayah Bandung dan sekitarnya.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Kecamatan ini juga memiliki sejumlah fasilitas umum, seperti sekolah, puskesmas, dan pasar tradisional yang melayani kebutuhan masyarakat setempat.</span></li>
-            </ul>
-                     </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-start" data-aos="fade-up" data-aos-delay="100">
+                @if($homepages->where('content', 'Camat')->first())
+                    <img src="{{ asset('storage/' . $homepages->where('content', 'Camat')->first()->image) }}" class="img-fluid" alt="Camat Cililin">
+                @endif
+            </div>
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                @if($homepages->where('content', 'Camat')->first())
+                    <h3>{{ $homepages->where('content', 'Camat')->first()->judul }}</h3>
+                    <p class="fst-italic">{!! $homepages->where('content', 'Camat')->first()->desc !!}</p>
+                @endif
+            </div>
+        </div>
+    </div>
+</section><!-- /Camat Section -->
+
+<!-- About Section -->
+<section id="about" class="about section light-background">
+    <div class="container">
+        <div class="row gy-4">
+        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            @if($homepages->where('content', 'Link Video')->first())
+                <img src="{{ asset('storage/' . $homepages->where('content', 'Link Video')->first()->image) }}" class="img-fluid" alt="">
+                
+                <!-- Mengambil URL dari desc dan menampilkannya dalam tag <a> -->
+                <a href="{!! $homepages->where('content', 'Link Video')->first()->desc !!}" class="glightbox pulsating-play-btn" target="_blank">
+              
+                </a>
+            @endif
         </div>
 
-      </div>
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                @if($homepages->where('content', 'Kecamatan Cililin')->first())
+                    <h3>{{ $homepages->where('content', 'Kecamatan Cililin')->first()->judul }}</h3>
+                    <p class="fst-italic">{!! $homepages->where('content', 'Kecamatan Cililin')->first()->desc !!}</p>
+                @endif
+            </div>
+        </div>
+    </div>
+</section><!-- /About Section -->
 
-    </section><!-- /About Section -->
-
-
-    @endsection
+@endsection

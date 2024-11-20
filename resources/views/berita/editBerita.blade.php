@@ -2,23 +2,11 @@
 
 @section('contentAdmin')
 
-<div class="pagetitle">
-  <h1>Berita</h1>
-  <nav>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active">Berita</li>
-    </ol>
-  </nav>
-</div><!-- End Page Title -->
-
-<section class="section dashboard">
 <div class="container col-xxl-8 py-5">
         <div class="card bg-white p-4 shadow rounded-4 border-0">
 
-           
-        <p class="mb-4">
-                <a href="../berita/data" class="text-decoration-none text-dark">Data</a> / Create Artikel
+            <p class="mb-4">
+                <a href="../dataBerita" class="text-decoration-none text-dark">Data</a> / Edit Artikel
             </p>
 
             {{-- Pesan Sukses di Simpan dan di Update --}}
@@ -30,12 +18,13 @@
             @endif
             {{-- Pesan Sukses di Simpan dan di Update --}}
 
-            <form action="../berita/storeBerita" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('berita.updateBerita', $artikel->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="form-group mb-3">
                     <label for="">Masukan Judul</label>
-                    <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul">
+                    <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul"
+                        value="{{ $artikel->judul }}">
                     @error('judul')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -46,10 +35,13 @@
                 <div class="form-group mb-3">
                     <label for="">Upload Image</label>
                     <div class="py-2">
-                        <img class="img-preview">
+                        @if ($artikel->image)
+                            <img src="{{ asset('storage/' . $artikel->image) }}" height="100" alt="Image Preview">
+                        @else
+                            <p>Tidak ada gambar yang diunggah.</p>
+                        @endif
                     </div>
-                    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image"
-                        id="image" onchange="previewImage()">
+                    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
                     @error('image')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -59,7 +51,9 @@
 
                 <div class="form-group mb-3">
                     <label for="">Masukan Artikel</label>
-                    <textarea name="desc" id="summernote" class="form-control  @error('desc') is-invalid @enderror"></textarea>
+                    <textarea name="desc" id="summernote" class="form-control  @error('desc') is-invalid @enderror">
+                    {{ $artikel->desc }}
+                    </textarea>
                     @error('desc')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -69,37 +63,26 @@
 
                 <button type="submit" class="btn btn-primary">Simpan</button>
             </form>
+            @section('scripts')
+        <script type="text/javascript">
+            function previewImage() {
+                const image = document.querySelector('#image');
+                const imgPreview = document.querySelector('.img-preview');
 
+                imgPreview.style.display = 'block';
 
-        </div>
-    </div>
+                const oFReader = new FileReader();
+                oFReader.readAsDataURL(image.files[0]);
 
-
-
-@section('scripts')
-    <script type="text/javascript">
-        function previewImage() {
-            const image = document.querySelector('#image');
-            const imgPreview = document.querySelector('.img-preview');
-
-            imgPreview.style.display = 'block';
-
-            const oFReader = new FileReader();
-            oFReader.readAsDataURL(image.files[0]);
-
-            oFReader.onload = function(oFREvent) {
-                imgPreview.src = oFREvent.target.result;
+                oFReader.onload = function(oFREvent) {
+                    imgPreview.src = oFREvent.target.result;
+                }
             }
-        }
-    </script>
-@endsection
+        </script>
+    @endsection 
 
-           
         </div>
     </div>
-
-
-</section>
 
 
 @endsection

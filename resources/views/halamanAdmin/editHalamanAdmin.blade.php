@@ -6,7 +6,7 @@
         <div class="card bg-white p-4 shadow rounded-4 border-0">
 
             <p class="mb-4">
-                <a href="../data" class="text-decoration-none text-dark">Data</a> / Edit Artikel
+                <a href="" class="text-decoration-none text-dark">Data</a> / Edit Halaman {{ $kategori }}
             </p>
 
             {{-- Pesan Sukses di Simpan dan di Update --}}
@@ -18,13 +18,24 @@
             @endif
             {{-- Pesan Sukses di Simpan dan di Update --}}
 
-            <form action="../berita/updateBerita/{{ $artikel->id }}" method="POST" enctype="multipart/form-data">
-                @csrf
+            <!--<form action="../updateHalamanAdmin/{{ $halaman->id }}" method="POST" enctype="multipart/form-data">-->
+            <form action="{{ route('halamanAdmin.updateHalamanAdmin', ['id' => $halaman->id, 'kategori' => $halaman->kategori]) }}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <div class="form-group mb-3">
+                <label for="">Kategori</label>
+                <input type="text" class="form-control @error('kategori') is-invalid @enderror" name="kategori"
+                    value="{{ $halaman->kategori }}" readonly>
+                @error('kategori')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
 
                 <div class="form-group mb-3">
                     <label for="">Masukan Judul</label>
                     <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul"
-                        value="{{ $artikel->judul }}">
+                        value="{{ $halaman->judul }}">
                     @error('judul')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -33,22 +44,9 @@
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="">Upload Image</label>
-                    <div class="py-2">
-                        <img src="{{ asset('storage/artikel/' . $artikel->image) }}" height="100" alt="">
-                    </div>
-                    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
-                    @error('image')
-                        <div class="invalid-feedback">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="">Masukan Artikel</label>
+                    <label for="">Masukan Deskripsi</label>
                     <textarea name="desc" id="summernote" class="form-control  @error('desc') is-invalid @enderror">
-                    {{ $artikel->desc }}
+                    {{ $halaman->desc }}
                     </textarea>
                     @error('desc')
                         <div class="invalid-feedback">
