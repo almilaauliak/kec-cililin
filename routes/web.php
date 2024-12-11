@@ -30,8 +30,8 @@ Route::post('/berita/deleteBerita/{id}', [KecamatanController::class, 'deleteBer
 
 //ROUTE KELOLA HALAMAN ADMIN
 
-Route::get('/halamanAdmin/halamanAdmin/{page}', [KecamatanController::class, 'halamanAdmin']);
-Route::get('/halamanAdmin/dataHalamanAdmin/{page}', [KecamatanController::class, 'dataHalamanAdmin']);
+Route::get('/halamanAdmin/halamanAdmin/{page}', [KecamatanController::class, 'halamanAdmin'])->name('halamanAdmin.halamanAdmin');
+Route::get('/halamanAdmin/dataHalamanAdmin/{page}', [KecamatanController::class, 'dataHalamanAdmin'])->name('halamanAdmin.dataHalamanAdmin'); // Menggunakan metode yang sama
 Route::get('/halamanAdmin/createHalamanAdmin', [KecamatanController::class, 'createHalamanAdmin'])->name('halamanAdmin.createHalamanAdmin');
 Route::post('/halamanAdmin/storeHalamanAdmin', [KecamatanController::class, 'storeHalamanAdmin'])->name('halamanAdmin.storeHalamanAdmin');
 Route::get('/halamanAdmin/editHalamanAdmin/{id}', [KecamatanController::class, 'editHalamanAdmin'])->name('halamanAdmin.editHalamanAdmin'); 

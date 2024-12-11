@@ -38,7 +38,10 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  {{-- Summernote CSS --}}
+  <!-- Datatables-->
+  <link href="https://cdn.datatables.net/v/bs4/dt-2.1.8/datatables.min.css" rel="stylesheet">
+
+  <!-- Summernote CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css" />
 </head>
 
@@ -128,7 +131,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('homepage/homepage') }}">
           <i class="bi bi-house-door"></i>
-          <span>Data Beranda</span>
+          <span>Kelola Halaman Beranda</span>
         </a>
       </li><!-- End Page Petugas Nav -->        
       <!-- dari sini copynya
@@ -199,6 +202,12 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Script datatable -->
+  <script src="https://cdn.datatables.net/v/bs4/dt-2.1.8/datatables.min.js"></script>
+   <script>
+    let table = new DataTable('#myTable');
+   </script>     
 
   <!-- Vendor JS Files -->
   <script src="/assetsAdmin/vendor/apexcharts/apexcharts.min.js"></script>
